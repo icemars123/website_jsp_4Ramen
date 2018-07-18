@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" name="myebdb" res-type="javax.sql.DataSource">
+        <property name="user" value="kzha108"></property>
+        <property name="password" value="Gavin951753"></property>
+        <property name="databaseName" value="ebdb"></property>
+        <property name="serverName" value="aa1vudnmnh2vcgx.cmyztqe3xucf.ap-southeast-2.rds.amazonaws.com"></property>
+        <property name="portNumber" value="3306"/>
+    </jdbc-connection-pool>
+    <jdbc-resource jndi-name="jdbc/myebdb" pool-name="myebdb"/>
+</resources>
